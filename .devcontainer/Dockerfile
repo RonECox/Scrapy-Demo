@@ -7,8 +7,12 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 # Define the path to the virtualenv to work with
 ARG VENV_PATH="/home/vscode/venv"
 
+# Copy the requirements file
+COPY ./requirements.txt /tmp/pip-tmp/requirements.txt
+
 # Create venv, upgrade pip tooling, then install requirements
-RUN su vscode -c "python -m venv ${VENV_PATH}" \
-    && su vscode -c \"${VENV_PATH}/bin/pip install --upgrade pip setuptools wheel\" \
-    && su vscode -c \"${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt\" \
-    && rm -rf /tmp/pip-tmp
+RUN su vscode -c 'python -m venv /home/vscode/venv' \
+ && su vscode -c '/home/vscode/venv/bin/pip install --upgrade pip setuptools wheel' \
+ && su vscode -c '/home/vscode/venv/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt' \
+ && rm -rf /tmp/pip-tmp
+
