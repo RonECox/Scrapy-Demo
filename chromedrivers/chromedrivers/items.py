@@ -6,7 +6,7 @@
 import scrapy
 
 
-class WikipediaItem(scrapy.Item):
+class ChromedriversItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

@@ -1,4 +1,4 @@
-# Scrapy settings for wikipedia project
+# Scrapy settings for chromedrivers project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'wikipedia'
+BOT_NAME = 'chromedrivers'
 
-SPIDER_MODULES = ['wikipedia.spiders']
-NEWSPIDER_MODULE = 'wikipedia.spiders'
+SPIDER_MODULES = ['chromedrivers.spiders']
+NEWSPIDER_MODULE = 'chromedrivers.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'wikipedia (+http://www.yourdomain.com)'
+#USER_AGENT = 'chromedrivers (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'wikipedia.middlewares.WikipediaSpiderMiddleware': 543,
+#    'chromedrivers.middlewares.ChromedriversSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'wikipedia.middlewares.WikipediaDownloaderMiddleware': 543,
+#    'chromedrivers.middlewares.ChromedriversDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'wikipedia.pipelines.WikipediaPipeline': 300,
+#    'chromedrivers.pipelines.ChromedriversPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

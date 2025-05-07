@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class WikipediaPipeline:
+class ChromedriversPipeline:
     def process_item(self, item, spider):
         return item
