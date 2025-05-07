@@ -9,20 +9,6 @@ This repository provides a Scrapy-based web scraper for extracting Chrome for Te
 - Outputs structured data to a CSV file
 - Compatible with GitHub Codespaces and VS Code Dev Containers
 
-## 🧱 Project Structure
-
-```text
-chromedrivers/
-├── chromedrivers/
-│   ├── __init__.py
-│   ├── settings.py
-│   └── spiders/
-│       └── drivers.py
-├── requirements.txt
-├── Dockerfile
-└── devcontainer.json
-```
-
 ## 🐍 Tech Stack
 
 - Python 3.8 (via Docker)
