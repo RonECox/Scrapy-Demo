@@ -2,6 +2,9 @@
 
 This repository provides a Scrapy-based web scraper for extracting Chrome for Testing version information and downloadable assets across various platforms and release channels (Stable, Beta, Dev, Canary).
 
+## Watch the Video Tutorial
+[![Watch the Video Tutorial](https://img.youtube.com/vi/xfKEwTTao8o/0.jpg)](https://youtu.be/xfKEwTTao8o)
+
 ## 🚀 Features
 
 - Extracts version, revision, binary type, platform, download URL, and HTTP status
