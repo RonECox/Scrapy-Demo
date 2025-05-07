@@ -34,7 +34,15 @@ Make sure you have:
 
 Then open the folder in VS Code and **reopen in container**.
 
-### 3. Run the Spider
+### 3. Install `requirements.txt` in a virtual environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 4. Run the Spider
 
 ```bash
 scrapy crawl drivers
